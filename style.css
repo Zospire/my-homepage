@@ -1,0 +1,245 @@
+body {
+
+    background-color: #b9b2b2;
+
+    font-family: Arial, sans-serif;
+
+    transition: all 0.5s ease;
+
+    animation: fadeIn 0.6s;
+
+}
+
+h1 {
+
+    color: #ea82ce;
+
+    text-align: center;
+
+}
+
+.card {
+
+    width: 700px;
+
+    margin: 50px auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:0 5px 20px rgba(255, 0, 0, 0.1);
+
+    transition: all 0.5s ease;
+
+    animation: cardShow 0.8s;
+
+}
+
+img {
+
+    width: 150px;
+
+    height: 150px;
+
+    border-radius: 50%;
+
+    display: block;
+
+    margin: 30px auto;
+
+}
+
+.about {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.about img {
+
+    margin-right: 70px;
+
+}
+
+nav {
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+nav a {
+
+    margin:0 15px;
+
+    text-decoration:none;
+
+    color:#333;
+
+    transition:0.3s;
+
+}
+
+nav a:hover {
+
+    color:#007bff;
+
+    transform:translateY(-3px);
+
+}
+
+.dark {
+
+    background:#222;
+
+}
+
+.dark .card {
+
+    background:#333;
+
+    color:white;
+
+}
+
+.dark nav a {
+
+    color:white;
+
+}
+
+button {
+
+    padding:10px 20px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    margin:10px;
+
+    transition:0.3s;
+
+}
+
+button:hover {
+
+    transform:scale(1.05);
+
+}
+
+@media screen and (max-width:600px){
+
+    .card{
+
+        width:90%;
+
+    }
+
+
+    .about{
+
+        flex-direction:column;
+
+    }
+
+
+    .about img{
+
+        margin-right:0;
+
+    }
+
+}
+
+.projects{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+.project{
+
+    flex:1;
+
+    padding:20px;
+
+    background:#eee;
+
+    color:black;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    transition:0.3s;
+
+}
+
+.project:hover {
+
+    transform:translateY(-10px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes cardShow {
+
+
+    from {
+
+        opacity:0;
+
+        transform:scale(0.9);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
