@@ -38,8 +38,8 @@ h1 {
 
 }
 
+#myPhoto {
 
-.avatar {
     width: 150px;
 
     height: 150px;
@@ -50,21 +50,28 @@ h1 {
 
     margin: 30px auto;
 
-
 }
 
-
-.project-img {
+#workPhoto {
 
     width:400px;
 
-    height: 150px;
-
-    filter: brightness(120%);
+    height:200px;
 
     display: block;
 
     margin: 30px auto;
+
+    filter:brightness(80%);
+
+    transition:0.3s;
+
+}
+
+#workPhoto:hover {
+
+    filter:brightness(140%);
+
 }
 
 .about {
