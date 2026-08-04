@@ -38,8 +38,8 @@ h1 {
 
 }
 
-img {
 
+.avatar {
     width: 150px;
 
     height: 150px;
@@ -50,6 +50,21 @@ img {
 
     margin: 30px auto;
 
+
+}
+
+
+.project-img {
+
+    width:400px;
+
+    height: 150px;
+
+    filter: brightness(120%);
+
+    display: block;
+
+    margin: 30px auto;
 }
 
 .about {
