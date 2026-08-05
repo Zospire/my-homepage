@@ -25,3 +25,57 @@ darkButton.onclick = function(){
     }
 
 }
+
+let links = document.querySelectorAll(".page-link");
+
+
+links.forEach(function(link){
+
+
+    link.onclick = function(event){
+
+
+        event.preventDefault();
+
+
+        let url = this.href;
+
+
+        document.body.classList.add("fade-out");
+
+
+        setTimeout(function(){
+
+
+            window.location.href = url;
+
+
+        },500);
+
+
+    }
+
+
+});
+
+let menuBtn =
+document.getElementById("menuBtn");
+
+
+let navLinks =
+document.getElementById("navLinks");
+
+
+if(menuBtn){
+
+
+    menuBtn.onclick=function(){
+
+
+        navLinks.classList.toggle("active");
+
+
+    }
+
+
+}

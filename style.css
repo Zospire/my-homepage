@@ -94,6 +94,62 @@ nav {
 
     margin-bottom:30px;
 
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+.nav-links a {
+
+    margin:0 15px;
+
+}
+
+.menu-btn {
+
+    display:none;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+}
+
+@media screen and (max-width:600px){
+
+    .menu-btn {
+
+        display:block;
+
+    }
+
+    .nav-links {
+
+        display:none;
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .nav-links a {
+
+        margin:15px;
+
+    }
+
+    .nav-links.active {
+
+        display:flex;
+
+    }
+
 }
 
 nav a {
@@ -261,6 +317,30 @@ a {
         opacity:1;
 
         transform:scale(1);
+
+    }
+
+}
+
+.fade-out {
+
+    animation: fadeOut 0.5s forwards;
+
+}
+
+
+@keyframes fadeOut {
+
+    from {
+
+        opacity:1;
+
+    }
+
+
+    to {
+
+        opacity:0;
 
     }
 
