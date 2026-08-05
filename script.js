@@ -28,7 +28,6 @@ darkButton.onclick = function(){
 
 let links = document.querySelectorAll(".page-link");
 
-
 links.forEach(function(link){
 
 

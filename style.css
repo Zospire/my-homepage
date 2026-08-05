@@ -120,37 +120,6 @@ nav {
 
 }
 
-@media screen and (max-width:600px){
-
-    .menu-btn {
-
-        display:block;
-
-    }
-
-    .nav-links {
-
-        display:none;
-
-        flex-direction:column;
-
-        width:100%;
-
-    }
-
-    .nav-links a {
-
-        margin:15px;
-
-    }
-
-    .nav-links.active {
-
-        display:flex;
-
-    }
-
-}
 
 nav a {
 
@@ -341,6 +310,38 @@ a {
     to {
 
         opacity:0;
+
+    }
+
+}
+
+@media screen and (max-width:600px){
+
+    .menu-btn {
+
+        display:block;
+
+    }
+
+    .nav-links {
+
+        display:none;
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .nav-links a {
+
+        margin:15px;
+
+    }
+
+    .nav-links.active {
+
+        display:flex;
 
     }
 
